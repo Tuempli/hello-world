@@ -1,0 +1,89 @@
+.unselectable {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+::selection {
+	background: red;
+	color: black;
+}
+
+body {
+	background-color: #4d1e51;
+	min-height: 100%;
+	padding-bottom: 30px;
+}
+
+footer {
+	color: purple;
+	background-color: black;
+	padding: 1em;
+	position: absolute;
+	bottom: 0;
+	width: 95%;
+	height: 30px;
+	text-align: center;
+}
+
+header {
+	color: purple;
+	background-color: black;
+	padding: 1em;
+}
+
+p, span, h1, a {
+	color: purple;	
+}
+
+a:hover {
+	color: red;
+}
+
+input[type="text"], input[type="number"] {
+	color: purple!important;
+	background-color: black!important;
+	width: 70%!important;
+	border: 1px solid grey;
+	outline: none;
+}
+
+input[type="submit"] {
+	color: purple;
+	background-color: black;
+	border: 1px solid grey;
+	outline: none;
+}
+
+input[type="submit"]:hover {
+	color: red;
+	border: 1px solid purple;
+}
+
+textarea {
+	border: 1px solid darkgrey;
+	color: black;
+	background-color: grey;
+	outline: none;
+}
+
+nav {
+	float:left;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 1px solid darkgrey;
+	padding: 1em;
+	overflow: hidden;	
+	height: 80%;
+}

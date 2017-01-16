@@ -1,0 +1,23 @@
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="test_new_css.css">
+		<title> Testsite </title>
+	</head>
+	<body class="colors">
+		<h1 align="center";>Dezimal / Binär Rechner</h1>
+		<p align="center";>Für Werte zwischen 0 und 4.294.967.295</p>
+		<form name="form" method="post" style="width:400px;">
+			<span>Dezimal:</span><br/>
+			<input style="width:70%" id="t" type="text" size="27" name="eingabe"
+			onClick="this.setSelectionRange(0, this.value.length)" value="<?php echo $zahl;?>"/>
+			<input style="width:auto" type="submit" name="submit" value="umwandeln" onclick="isNumber()"/><br/>
+			<span>Binär:</span><br/>
+			<input style="width:70%" type="text" placeholder=":D" size="40" name="ausgabe"
+			readonly="on" value="<?php echo make_binary($zahl, $binaerwerte); ?>"/><br/>
+		</form>
+
+		<p id="error"> </p>
+	</body>
+</html>
